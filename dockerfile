@@ -6,8 +6,8 @@ COPY packages*.json ./
 
 RUN npm install
 
-COPY . /app
+COPY . .
 
-EXPOSE 8080
+EXPOSE 3000
 
 CMD [ "npm", "start" ]
